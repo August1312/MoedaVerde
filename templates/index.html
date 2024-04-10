@@ -4,51 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet">
-    <script src="/scripts/teste.js"></script>
+    <meta name="author" content="Danilo Silva dos Santos">
     <title>RedeEcoLoop</title>
+
+    <link rel="stylesheet" href="../styler/styler.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="#" class="logo-link">RedeEcoLoop</a>
-        </div>
-        <nav class="nav-bar">
-            <ul class="nav-menu">
-                <li><a href="./index.html">Sobre</a></li>
-                <li><a href="./solucao.html">Solução</a></li>
-                <li><a href="./cooperativas.html">Cooperativa</a></li>
-                <li><a href="./parceiros.html">Parceiros</a></li>
-                <li><a href="./relatorio.html">Relatório</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">RedeEcoLoop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Solução</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cooperativa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Parceiros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Pesquisa</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="main">
-        <aside>
-            <ul>
-                <li><a href="#" onclick="TrocaTitulo('redeecoloop')">RedeEcoLoop</a></li>
-                <li><a href="#" onclick="TrocaTitulo('objetivo')">Objetivo da empresa</a></li>
-                <li><a href="#" onclick="TrocaTitulo('parceria')">A importancia de Parcerias</a></li>
-            </ul>
-        </aside>
-
-        <div class="container">
-            <section class="titulos-interrativos">
-                <h1 id="titulo"> RedeEcoLoop</h1>
-            </section>
-
-            <section class="redeecoloop">
-                <div class="cont-1">
-                    <h2>Transformando Vidas, Preservando o Planeta: A Jornada da RedeEcoLoop</h2>
-                    <video controls width="640" height="360">
-                        <source
-                            src="/img/RECICLAR _ CORES DAS LIXEIRAS _ MEIO AMBIENTE _ ENSINO FUNDAMENTAL _ EDUCAÇÃO INFANTIL (2).mp4"
-                            type="video/mp4">
-                        Seu navegador não suporta a tag de vídeo.
-                    </video>
-
+    <main id="main">
+        <section id="inicio" class="row m-0 p-0">
+            <div id="part1" class="row-md-4 d-flex justify-content-center align-items-center flex-column">
+                <h2 class="text-shadow">Transformando Vidas, Preservando o Planeta: <span
+                        class="badge text-bg-secondary">"A Jornada da RedeEcoLoop</span></h2>
+                <div class="row-md-6">
+                    <div id="carouselVideos" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <video class="d-block w-100" controls width="640" height="360">
+                                    <source src="../img/video/IMPORTÂNCIA DA RECICLAGEM.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../img/img-carosel/carousel-01.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/img-carosel/carousel-02.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/img-carosel/carousel-03.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/img-carosel/carousel-04.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideos"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselVideos"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row-md-6">
                     <p>
                         Em um mundo cada vez mais consciente da necessidade de preservação ambiental e inclusão social,
                         <br>
@@ -59,92 +110,141 @@
                         preserva o planeta.
                     </p>
                 </div>
-                <div class="cont-2">
-                    h2>Preservação Ambiental e Inclusão Social</h2>
-                    <br>
-                    <img src="/img/inicio-img-1.png" alt="img-1">
-                    <p>
-                        Em uma grande cidade, onde arranha-céus se erguem ao lado de montanhas de lixo, conhecemos João,
-                        um
-                        catador de reciclagem dedicado e apaixonado pelo meio ambiente. Todos os dias, João e seus
-                        colegas
-                        lutam contra a dura realidade das ruas, coletando materiais recicláveis para ganhar o sustento.
-                    </p>
-                    <br>
-                    <img src="/img/inicio-img-2.png" alt="img-2">
-                    <p>
-                        No entanto, apesar de seu trabalho árduo e essencial para a preservação do meio ambiente, João e
-                        os
-                        catadores enfrentam desafios significativos. Sem proteção social, eles sofrem com a falta de
-                        segurança no trabalho, remuneração injusta e ausência de benefícios.
-                    </p>
-                    <br>
-                    <p>
-                        É neste momento de luta e desespero que a RedeEcoLoop entra em cena. Inspirada pela visão de
-                        criar
-                        um mundo onde a sustentabilidade e a justiça social caminham de mãos dadas, a empresa lança uma
-                        iniciativa revolucionária: incentivar os catadores de reciclagem a se tornarem
-                        Microempreendedores
-                        Individuais (MEI).
-                    </p>
-                    <br>
+            </div>
+            <div id="part2" class="row-md-5 d-flex justify-content-center align-items-center flex-column">
+                <h3>Preservação Ambiental e Inclusão Social</h3>
+                <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center flex-column">
+                        <img src="/img/inicio-img-1.png" class="img-fluid" alt="img-1">
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            Em uma grande cidade, onde arranha-céus se erguem ao lado de montanhas de lixo, conhecemos
+                            João,
+                            um catador de reciclagem dedicado e apaixonado pelo meio ambiente. Todos os dias, João e
+                            seus
+                            colegas lutam contra a dura realidade das ruas, coletando materiais recicláveis para ganhar
+                            o sustento.
+                        </p>
+                    </div>
                 </div>
-                <div class="cont-3">
-                    <h2>A importancia de Parcerias</h2>
-                    <br>
-                    <img src="/img/inicio-img-3.png" alt="img-3">
-                    <p>
-                        Com o apoio da RedeEcoLoop, João e seus colegas aprendem sobre os benefícios de se tornarem
-                        MEIs.
-                        Eles descobrem como registrar seus negócios, obter acesso a benefícios previdenciários, e como
-                        garantir direitos trabalhistas fundamentais. Além disso, a empresa oferece treinamento em gestão
-                        financeira e empreendedorismo, capacitando os catadores a administrar seus negócios de forma
-                        eficiente e sustentável.
-                    </p>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                            No entanto, apesar de seu trabalho árduo e essencial para a preservação do meio ambiente,
+                            João e os
+                            catadores enfrentam desafios significativos. Sem proteção social, eles sofrem com a falta de
+                            segurança no trabalho, remuneração injusta e ausência de benefícios.
+                        </p>
+                        <p>
+                            É neste momento de luta e desespero que a RedeEcoLoop entra em cena. Inspirada pela visão de
+                            criar
+                            um mundo onde a sustentabilidade e a justiça social caminham de mãos dadas, a empresa lança
+                            uma
+                            iniciativa revolucionária: incentivar os catadores de reciclagem a se tornarem
+                            Microempreendedores
+                            Individuais (MEI).
+                        </p>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center align-items-center flex-column">
+                        <img src="/img/inicio-img-2.png" class="img-fluid" alt="img-2">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="part3" class="row-md-3 d-flex justify-content-center align-items-center flex-column">
+                <h3>A importancia de Parcerias</h3>
+                <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center flex-column">
+                        <img src="/img/inicio-img-3.png" class="img-fluid" alt="img-3">
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            Com o apoio da RedeEcoLoop, João e seus colegas aprendem sobre os benefícios de se tornarem
+                            MEIs.
+                            Eles descobrem como registrar seus negócios, obter acesso a benefícios previdenciários, e como
+                            garantir direitos trabalhistas fundamentais. Além disso, a empresa oferece treinamento em gestão
+                            financeira e empreendedorismo, capacitando os catadores a administrar seus negócios de forma
+                            eficiente e sustentável.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
                     <h3>Parcerias com Grandes Empresas</h3>
-                    <br>
-                    <img src="/img/inicio-img-4.png" alt="img-4">
-                    <p>
-                        Enquanto isso, a RedeEcoLoop não se limita a ajudar apenas os catadores. Ela também busca
-                        parcerias
-                        com grandes empresas comprometidas com a responsabilidade socioambiental. Convencidas dos
-                        benefícios
-                        de apoiar os MEIs, essas empresas passam a direcionar parte de seus recursos para a compra de
-                        materiais recicláveis coletados pelos catadores associados à RedeEcoLoop
-                    </p>
-                    <br>
-                    <p>
-                        Com o tempo, o esforço conjunto da RedeEcoLoop, dos catadores de reciclagem e das grandes
-                        empresas
-                        começa a dar frutos. João e seus colegas veem suas vidas transformadas, agora com segurança no
-                        trabalho, renda mais estável e acesso a benefícios previdenciários. As grandes empresas, por sua
-                        vez, desfrutam de uma cadeia de suprimentos mais sustentável e responsável, além de fortalecerem
-                        suas reputações como agentes de mudança positiva na sociedade.
-                    </p>
+                    <div class="col-md-8">
+                        <p>
+                            Enquanto isso, a RedeEcoLoop não se limita a ajudar apenas os catadores. Ela também busca
+                            parcerias
+                            com grandes empresas comprometidas com a responsabilidade socioambiental. Convencidas dos
+                            benefícios
+                            de apoiar os MEIs, essas empresas passam a direcionar parte de seus recursos para a compra de
+                            materiais recicláveis coletados pelos catadores associados à RedeEcoLoop
+                        </p>
+                        <br>
+                        <p>
+                            Com o tempo, o esforço conjunto da RedeEcoLoop, dos catadores de reciclagem e das grandes
+                            empresas
+                            começa a dar frutos. João e seus colegas veem suas vidas transformadas, agora com segurança no
+                            trabalho, renda mais estável e acesso a benefícios previdenciários. As grandes empresas, por sua
+                            vez, desfrutam de uma cadeia de suprimentos mais sustentável e responsável, além de fortalecerem
+                            suas reputações como agentes de mudança positiva na sociedade.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/img/inicio-img-4.png" class="img-fluid" alt="img-4">
+                    </div>
                 </div>
-                <div class="cont-4">
-                    <h2>Transformação Socioambiental</h2>
-                    <p>A RedeEcoLoop forma parcerias com grandes empresas comprometidas com a responsabilidade
-                        socioambiental.</p>
-                    <img src="" alt="logo-empresas-parceira1">
-                    <img src="" alt="logo-empresas-parceira2">
-                    <img src="" alt="logo-empresas-parceira3">
-                    <img src="" alt="logo-empresas-parceira4">
+            </div>
+            <div id="part4" class="row-md-3 d-flex justify-content-center align-items-center flex-column">
+                <h2>Transformação Socioambiental</h2>
+                <p>A RedeEcoLoop forma parcerias com grandes empresas comprometidas com a responsabilidade
+                    socioambiental.</p>
+                <div class="row-md-8">
+                    <div class="card-deck">
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Parceiros 1</h5>
+                              <p class="card-text">Pequena descrição da empresa.</p>
+                              <a href="#" class=" btn btn-primary">Conheça Mais</a>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Parceiros 2</h5>
+                              <p class="card-text">Pequena descrição da empresa.</p>
+                              <a href="#" class=" btn btn-primary">Conheça Mais</a>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Parceiros 3</h5>
+                              <p class="card-text">Pequena descrição da empresa.</p>
+                              <a href="#" class=" btn btn-primary">Conheça Mais</a>
+                            </div>
+                          </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Parceiros 4</h5>
+                              <p class="card-text">Pequena descrição da empresa.</p>
+                              <a href="#" class=" btn btn-primary">Conheça Mais</a>
+                            </div>
+                          </div>
+                    </div>
                 </div>
-        </div>
-        <div class="cont"></div>
-        </section>
-        <section class="destaque">
-            <h2>Destaques</h2>
-            <p></p>
-            <a href="#" class="btn">Saiba Mais</a>
-        </section>
-        <footer class="foote">
-            <p>&copy; 2024 RedeEcoLoop. Todos os direitos reservados.</p>
-        </footer>
-        </div>
+               
+            </div>
+            <footer id="footer">
+                <p>&copy; 2024 RedeEcoLoop. Todos os direitos reservados.</p>
+            </footer>
         </section>
     </main>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/teste.js"></script>
 </body>
 
 </html>

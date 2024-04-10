@@ -47,3 +47,17 @@ function TrocaTitulo(titulo) {
 
      event.target.value = formattedValue;
  });
+
+ document.addEventListener('DOMContentLoaded', function () {
+    var carouselVideos = document.getElementById('carouselVideos');
+    var myCarousel = new bootstrap.Carousel(carouselVideos, {
+        interval: false // Desativa o intervalo automático
+    });
+
+    carouselVideos.addEventListener('slid.bs.carousel', function () {
+        var activeVideo = carouselVideos.querySelector('.carousel-item.active video');
+        if (activeVideo) {
+            activeVideo.play();
+        }
+    });
+});
